@@ -1,4 +1,3 @@
-baseURL = 'https://foundation.tlapl.us'
 languageCode = 'en-us'
 title = 'TLA+ Foundation'
 pygmentsUseClassic = true

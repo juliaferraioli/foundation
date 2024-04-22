@@ -1,5 +1,9 @@
 name: GitHub Pages
 
+env:
+  PROD_SITE: "https://foundation.tlapl.us"
+  DEV_SITE: "https://juliaferraioli.github.io/foundation"
+
 on:
   push:
     branches:
@@ -23,12 +27,16 @@ jobs:
           hugo-version: '0.124.1'
           extended: true
 
-      - name: Build
-        run: hugo --minify
+      - name: Build Main
+        if: github.ref == 'refs/heads/main'
+        run: hugo --baseURL=$PROD_SITE --minify
+
+      - name: Build Dev
+        if: github.ref != 'refs/heads/main'
+        run: hugo --baseURL=$DEV_SITE --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public

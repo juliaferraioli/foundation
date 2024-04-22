@@ -2,7 +2,7 @@
 title = 'TLA+ Foundation'
 linkTitle = 'TLA+ Foundation'
 description = ""
-draft = true
+draft = false
 +++
 
 ## Goals of the Foundation
