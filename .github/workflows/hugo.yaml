@@ -2,12 +2,11 @@ name: GitHub Pages
 
 env:
   PROD_SITE: "https://foundation.tlapl.us"
-  DEV_SITE: "https://juliaferraioli.github.io/foundation"
 
 on:
   push:
     branches:
-      - hugo-migration  # Set a branch to deploy
+      - main  # Set a branch to deploy
   pull_request:
 
 jobs:
@@ -30,10 +29,6 @@ jobs:
       - name: Build Main
         if: github.ref == 'refs/heads/main'
         run: hugo --baseURL=$PROD_SITE --minify
-
-      - name: Build Dev
-        if: github.ref != 'refs/heads/main'
-        run: hugo --baseURL=$DEV_SITE --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
