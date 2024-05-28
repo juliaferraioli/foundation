@@ -1,5 +1,5 @@
 {{- $page := .page }} {{- $content := .content }} {{- with $page }}
-<article class="chapter">
+<article>
   <header class="headline">{{- partial "content-header.html" . }}</header>
   {{ partial "heading-pre.html" . }} {{ partial "heading.html" . }}{{ partial
   "heading-post.html" . }} {{ $content | safeHTML }} {{ partial

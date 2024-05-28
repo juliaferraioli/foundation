@@ -1,6 +1,7 @@
 +++
 title = 'TLA+ Foundation'
 linkTitle = 'TLA+ Foundation'
+archetype = "home"
 description = ""
 draft = false
 +++
