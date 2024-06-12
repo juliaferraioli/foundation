@@ -1,12 +1,7 @@
 /* my-custom-variant */
 :root {
   --SECONDARY-color: rgba(72, 106, 201, 1); /* brand secondary color */
-  --ACCENT-color: rgba(
-    255,
-    136,
-    255,
-    1
-  ); /* brand accent color, used for search highlights */
+  --ACCENT-color: #67117e; /* brand accent color, used for search highlights */
   --MAIN-LINK-HOVER-color: rgba(
     32,
     40,
@@ -154,7 +149,6 @@ body.main-width-max:not(.print) #R-body .narrow .flex-block-wrapper {
   position: relative;
 }
 article {
-  display: flex;
   flex-direction: column;
   min-height: 100%;
 }

@@ -4,6 +4,7 @@ pygmentsUseClassic = true
 PygmentsCodeFences = true
 enableRobotsTXT = true
 noChmod = true
+staticDir = ['static']
 
 [Params]
     disableInlineCopyToClipBoard = false
