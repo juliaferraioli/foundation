@@ -1,5 +1,5 @@
 +++
-type= "section"
+type= "default"
 menuPre = "<i class='fa-fw fas fa-building-columns'></i> "
 title = "TLA+ Foundation Grants"
 weight = 2
